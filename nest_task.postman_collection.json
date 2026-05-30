@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "93d1b4ce-5229-4efe-9af9-a358eb9a547c",
+    "name": "nest_task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47255556"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/send-sms",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "nsms_live_075dd8ec0b10c5fefa79a07870ab4d055b1ef086b0b96a6e07d2140636555fa0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"number\": \"08021234567\",\r\n  \"message\": \"Your order #ORD-9923 has been confirmed. Thank you!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/send-sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "send-sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "nsms_live_075dd8ec0b10c5fefa79a07870ab4d055b1ef086b0b96a6e07d2140636555fa0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"number\": \"08031234567\",\r\n  \"message\": \"Hello! Your OTP is 4821. Valid for 5 minutes.\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/send-sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "send-sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "nsms_live_075dd8ec0b10c5fefa79a07870ab4d055b1ef086b0b96a6e07d2140636555fa0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"number\": \"08091234567\",\r\n  \"message\": \"Your account balance is ₦12,500. Thank you for banking with us.\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/send-sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "send-sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "key",
+              "value": "nsms_live_075dd8ec0b10c5fefa79a07870ab4d055b1ef086b0b96a6e07d2140636555fa0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"number\": \"+2348031234567\",\r\n  \"message\": \"Welcome aboard! Your account is now active.\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/send-sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "send-sms"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
